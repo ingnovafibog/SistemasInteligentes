@@ -87,6 +87,7 @@ REQUIRED_IMPORT_GROUPS = {
     "departamento/instituto": {
         "departamento_o_instituto_investigador_principal",
         "departamento_o_instituto___investigador_principal",
+        "departamento_o_instituto_director_a",
     },
 }
 UNASSIGNED = {
@@ -165,6 +166,7 @@ def prepare_report_frame(df: pd.DataFrame, source_columns: set[str]) -> pd.DataF
         "fecha_propuesto",
         "departamento_o_instituto_investigador_principal",
         "departamento_o_instituto___investigador_principal",
+        "departamento_o_instituto_director_a",
         "grupo_de_investigacion",
         *sorted(GROUP_COLUMNS),
         "objetivo_general",

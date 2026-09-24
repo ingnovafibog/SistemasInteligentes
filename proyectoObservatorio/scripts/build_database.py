@@ -247,6 +247,7 @@ def build_projects(df: pd.DataFrame) -> pd.DataFrame:
                         row,
                         "departamento_o_instituto_investigador_principal",
                         "departamento_o_instituto___investigador_principal",
+                        "departamento_o_instituto_director_a",
                     )
                 ),
                 "estado": normalize_estado(row.get("estado_actual")),
